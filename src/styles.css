@@ -175,6 +175,38 @@ main p {
   opacity: 0.7;
 }
 
+.image-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.image-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 30px;
+}
+
+.image-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.image-table img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.image-table h4 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -247,6 +279,23 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .image-table table,
+  .image-table tr {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .image-table td {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .image-table h4 {
+    margin-top: 0;
   }
   
 }
